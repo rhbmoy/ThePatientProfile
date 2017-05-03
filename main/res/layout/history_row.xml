@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/past_medical_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Past Medical History"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/past_medical_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conditions/Illness: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:padding="3dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/post_spinner_data"
+            android:background="@drawable/input_outline"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:text="User selected conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/rec_allergies"
+            android:text="List of Allergies:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rec_listAllergies"
+            android:background="@drawable/input_outline"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:text="User allergy list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/pmdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Surgical History:"
+            android:padding="3dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/post_surgeries"
+            android:background="@drawable/input_outline"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:text="User input surgeries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/pat_family_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Family History:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:padding="3dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/post_illness"
+            android:background="@drawable/input_outline"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:text="User input family illness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/smdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Social History:"
+            android:padding="3dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/smoker_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Do you smoke?"
+            android:padding="5dp"
+            android:textSize="13dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/post_smoker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_outline"
+            android:padding="10dp"
+            android:textSize="13dp"
+            android:layout_margin="2dp"
+            android:hint="Yes/No" />
+
+        <TextView
+            android:id="@+id/drinker_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Do you drink alcohol?"
+            android:padding="5dp"
+            android:textSize="13dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/post_drinker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_outline"
+            android:padding="10dp"
+            android:textSize="13dp"
+            android:layout_margin="2dp"
+            android:hint="Yes/No" />
+
+        <TextView
+            android:id="@+id/drug_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Do you take recreational drugs, if so list them"
+            android:padding="5dp"
+            android:textSize="13dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/post_drug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_outline"
+            android:padding="10dp"
+            android:textSize="13dp"
+            android:layout_margin="2dp"
+            android:hint="Enter list of recreational drugs, or enter None" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

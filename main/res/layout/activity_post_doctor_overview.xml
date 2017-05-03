@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="git.combmoy01firebase.httpsgithub.patientprof.PostDoctorOverview">
+
+    <TextView
+        android:id="@+id/Overview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Add New Visit!"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/tw__composer_black"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_doctor_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:layout_below="@+id/Overview_title">
+
+        <EditText
+            android:id="@+id/doctor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Doctor's Name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_doctor_specialty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:layout_below="@+id/input_layout_doctor_name">
+
+        <EditText
+            android:id="@+id/doctor_specialty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Specialty"
+            android:inputType="textPersonName"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_doctor_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:layout_below="@+id/input_layout_doctor_specialty">
+
+        <EditText
+            android:id="@+id/doctor_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address of Primary Office"
+            android:inputType="textPostalAddress"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_visit_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:layout_below="@+id/input_layout_doctor_location">
+
+        <EditText
+            android:id="@+id/visit_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select the date of your visit:"
+            android:inputType="date"
+            android:focusable="false"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_visit_synopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:layout_below="@+id/input_layout_visit_date">
+
+        <EditText
+            android:id="@+id/visit_synopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doctor's Advice"
+            android:inputType="textMultiLine"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/add_visit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a visit!"
+        android:layout_below="@id/input_layout_visit_synopsis"/>
+
+
+</RelativeLayout>

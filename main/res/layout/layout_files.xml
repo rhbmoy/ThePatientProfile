@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="100dp">
+
+
+            <TextView
+                android:id="@+id/labViewName"
+                android:background="@drawable/input_outline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Name"
+                android:textColor="@color/authui_colorPrimaryDark"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/doctor_name_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor issued: "
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/authui_colorPrimaryDark"
+                android:layout_below="@id/labViewName"/>
+
+            <TextView
+                android:id="@+id/labViewDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor"
+                android:layout_below="@+id/doctor_name_prompt"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labViewName"
+                android:visibility="invisible"/>
+
+            <WebView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/webview">
+
+            </WebView>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

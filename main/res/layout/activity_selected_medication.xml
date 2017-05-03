@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myScroll">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/selected_med_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:text="TextView"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/selected_med_dose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selected_med_name"
+                android:layout_marginTop="43dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/selected_med_freq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/selected_med_dose"
+                android:layout_below="@+id/selected_med_dose"
+                android:layout_marginTop="43dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/selected_med_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/selected_med_freq"
+                android:layout_below="@+id/selected_med_freq"
+                android:layout_marginTop="43dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/selected_med_prevention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/selected_med_reason"
+                android:layout_below="@+id/selected_med_reason"
+                android:layout_marginTop="43dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/singleRemoveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Remove Medication" />
+
+
+            <Button
+                android:id="@+id/showAlarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Medication Alarm"/>
+
+            <TimePicker
+                android:id="@+id/picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"
+                android:visibility="invisible">
+
+            </TimePicker>
+
+            <CheckBox
+                android:id="@+id/optrepeat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Repeat"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/alarm_repeat_interval"
+                android:hint="Enter Time Between Doses: (hours)"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/startSetDialog"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Target Time"
+                android:visibility="invisible"/>
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel Alarm"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/alarmprompt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="git.combmoy01firebase.httpsgithub.patientprof.UpdateMedicalHistory">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/past_medical_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:text="Past Medical History"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/past_medical_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you now or have you ever had: "
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:padding="5dp"
+        android:textStyle="bold" />
+
+    <git.combmoy01firebase.httpsgithub.patientprof.MultiSpinnerSearch
+        android:id="@+id/searchMultiSpinnerUnlimited"
+        android:background="@drawable/input_outline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        app:hintText="(Select All That Apply)" />
+
+        <TextView
+            android:id="@+id/allergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please list your Allergies: "
+            android:padding="5dp"
+            android:textSize="13dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/listAllergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_outline"
+            android:padding="10dp"
+            android:textSize="13dp"
+            android:hint="Your list of allergies"/>
+
+    <TextView
+        android:id="@+id/pmdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Surgical History:"
+        android:padding="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/past_surgeries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:padding="10dp"
+        android:textSize="13dp"
+        android:hint="List all past surgeries"/>
+
+    <TextView
+        android:id="@+id/pat_family_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Family History:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:padding="5dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/past_family_illness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:padding="10dp"
+        android:textSize="13dp"
+        android:hint="List all past family illness"/>
+
+    <TextView
+        android:id="@+id/smdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Social History:"
+        android:padding="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/smoker_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you smoke?"
+        android:padding="5dp"
+        android:textSize="13dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/smoker_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:padding="10dp"
+        android:textSize="13dp"
+        android:hint="Yes/No"/>
+
+    <TextView
+        android:id="@+id/drinker_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you drink alcohol?"
+        android:padding="5dp"
+        android:textSize="13dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/drinker_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:padding="10dp"
+        android:textSize="13dp"
+        android:hint="Yes/No"/>
+
+    <TextView
+        android:id="@+id/drug_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you take recreational drugs, if so list them"
+        android:padding="5dp"
+        android:textSize="13dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/drug_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:padding="10dp"
+        android:textSize="13dp"
+        android:hint="Enter list of recreational drugs, or enter None"/>
+
+    <Button
+        android:id="@+id/update_History"
+        android:hint="Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
